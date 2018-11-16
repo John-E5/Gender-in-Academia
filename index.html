@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/dc.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/style.css">
 
     <script type="text/javascript" src="static/js/d3.min.js"></script>
@@ -18,24 +19,86 @@
 
 </head>
 <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Gender In Academia</a>
+            </div>
+        </div>
+    </nav>
 
-    <h1>Gender In Academia</h1>
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <h1 class="section-heading">Gender In Academia</h1>
+                        <div id="discipline-selector"></div>
+                    </div>
+                </div>
 
-    <div id="discipline-selector"></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <p class="section-paragraph">Gender in the professional level:</p>
+                    </div>
 
-    <div id="gender-balance"></div>
+                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                        <i class="fa fa-female fa-gender" aria-hidden="true"></i> <span class="number-box" id="percent-of-women-professors"></span>
+                        <i class="fa fa-male fa-gender" aria-hidden="true"></i> <span class="number-box" id="percent-of-men-professors"></span>
 
-    <div id="average-salary"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div id="rank-distribution"></div>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 text-center">
+                        <p class="section-paragraph">Men outnumber women 10 to 1</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-center">
+                        <p class="section-paragraph">Men earn on average 15% more</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-center">
+                        <p class="section-paragraph">Distribution of ranks is weighted towards the upper level for men</p>
+                    </div>
+                </div>
 
-    <div class="number-box" id="percent-of-women-professors"></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 text-center" id="gender-balance" class="custom-chart"></div>
+                    <div class="col-xs-12 col-sm-4 text-center" id="average-salary" class="custom-chart"></div>
+                    <div class="col-xs-12 col-sm-4 text-center" id="rank-distribution" class="custom-chart"></div>
+                </div>
+            </div>
+        </section>
 
-    <div class="number-box" id="percent-of-men-professors"></div>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 text-center">
+                        <p class="section-paragraph">There appears to be little correlation between salary and years of service</p>
+                    </div>
 
-    <div id="service-salary"></div>
+                        <div class="col-xs-12 col-sm-12 text-center" id="service-salary">
 
-    <div id="phd-salary"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 text-center">
+                        <p class="section-paragraph">There is a loose correlation between salary and years since receiving a phd</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 text-center" id="phd-salary"></div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>

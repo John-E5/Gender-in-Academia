@@ -189,7 +189,7 @@ function show_service_to_salary_correlation(ndx) {
 
     var genderColors = d3.scale.ordinal()
         .domain(["Female", "Male"])
-        .range(["pink", "blue"]);
+        .range(["red", "blue"]);
 
     var eDim = ndx.dimension(dc.pluck("yrs_service"));
     var experienceDim = ndx.dimension(function (d) {
@@ -225,7 +225,7 @@ function show_phd_to_salary_correlation(ndx) {
 
     var genderColors = d3.scale.ordinal()
         .domain(["Female", "Male"])
-        .range(["pink", "blue"]);
+        .range(["red", "blue"]);
 
     var pDim = ndx.dimension(dc.pluck("yrs_since_phd"));
     var phdDim = ndx.dimension(function (d) {
